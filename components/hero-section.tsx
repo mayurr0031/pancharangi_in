@@ -25,7 +25,7 @@ export function HeroSection() {
           <div className="relative w-32 h-32 sm:w-40 sm:h-40 mx-auto rounded-full overflow-hidden bg-[#f5f0e8] shadow-2xl">
             <Image
               src="/logo.jpeg"
-              alt="ಚಿತ್ರೂಣ.in Logo"
+              alt="ಪಂಚರಂಗಿ.in Logo"
               fill
               className="object-cover"
               priority

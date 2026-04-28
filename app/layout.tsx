@@ -33,7 +33,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${inter.variable} ${cormorant.variable} ${notoSerifKannada.variable} bg-[#0f0c09]`}>
-      <body className="font-sans antialiased bg-[#0f0c09] text-[#f5f0e8]">
+      <body suppressHydrationWarning={true} className="font-sans antialiased bg-[#0f0c09] text-[#f5f0e8]">
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>

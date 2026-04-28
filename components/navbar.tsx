@@ -20,6 +20,10 @@ export function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
+  useEffect(() => {
+    // no-op: always render language toggle based on context
+  }, [])
+
   const navLinks = [
     { href: '#home', en: 'Home', kn: 'ಮುಖಪುಟ' },
     { href: '#services', en: 'Services', kn: 'ಸೇವೆಗಳು' },
@@ -40,13 +44,13 @@ export function Navbar() {
             <div className="relative w-12 h-12 rounded-full overflow-hidden bg-[#f5f0e8]">
               <Image
                 src="/logo.jpeg"
-                alt="ಚಿತ್ರೂಣ.in Logo"
+                alt="ಪಂಚರಂಗಿ.in Logo"
                 fill
                 className="object-cover"
               />
             </div>
             <span className="font-[var(--font-noto-serif-kannada)] text-xl font-semibold text-[#f5f0e8] hidden sm:block">
-              ಚಿತ್ರೂಣ.in
+              ಪಂಚರಂಗಿ.in
             </span>
           </Link>
 
